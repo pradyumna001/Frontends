@@ -1,0 +1,143 @@
+/*---------------------------------------------CSS INDEX ------------------------------------------
+                                1.Universal CSS
+                                2.Common CSS
+                                3.Modal Header CSS
+                                4.Modal Body CSS
+                                5.Media Query
+
+---------------------------------------------CSS INDEX ------------------------------------------*/
+
+
+/*--------------------------UNIVERSAL CSS-----------------------------------*/
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+/*--------------------------COMMON CSS-----------------------------------*/
+
+button,
+button:focus,
+.close:focus,
+.close {
+    outline: none;
+    box-shadow: none!important;
+}
+
+.custom-container {
+    width: 1440px;
+}
+
+.fix-width {
+    width: 1121px;
+}
+
+.color-blue {
+    color: #53ADE9;
+}
+
+
+/*------------------------------Modal Header Css------------------*/
+
+.custom-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #53ADE9!important;
+    opacity: 1;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 0;
+    width: 40px;
+    height: 40px;
+    border: #53ADE9 solid !important;
+    border-radius: 50%!important;
+}
+
+.custom-header-padding {
+    padding-bottom: 13px!important;
+    padding-top: 13px!important;
+}
+
+.custom-modal-title {
+    color: #53ADE9;
+    font-size: 50px;
+    letter-spacing: 1.7px;
+    line-height: 56px;
+}
+
+.border-bottom-style {
+    border-width: 1.3px;
+}
+
+.px-50-py-55 {
+    padding: 55px 50px;
+}
+
+
+/*------------------------------Modal Header Css------------------*/
+
+.modal-img-heading {
+    color: #195A83;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 9px;
+}
+
+.modal-img-para {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.py-45-px-40 {
+    padding: 45px 40px;
+}
+
+.py-8-px-35 {
+    padding: 8.5px 35px;
+}
+
+
+/*-------------------------------------------------Media Queries Css--------------------*/
+
+@media (min-width:1200px) {
+    .custom-container {
+        width: 100%;
+    }
+    .pr-lg-0 {
+        padding-right: 0!important;
+    }
+    .pl-lg-0 {
+        padding-left: 0!important;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .custom-container {
+        width: 100%;
+    }
+    .fix-width {
+        width: 95%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .custom-container {
+        width: 100%;
+    }
+    .fix-width {
+        width: 95%;
+    }
+}
+
+@media (max-width:767px) {
+    .custom-container {
+        width: 100%;
+    }
+    .fix-width {
+        width: 95%;
+    }
+}

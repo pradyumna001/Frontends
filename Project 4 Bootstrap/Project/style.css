@@ -1,0 +1,325 @@
+/*---------------------------------------------CSS INDEX ------------------------------------------
+                                1.Universal CSS
+                                2.Common CSS
+                                3.Navbar CSS
+                                4.Main CSS
+                                5.Footer
+                                6.Media Query
+
+---------------------------------------------CSS INDEX ------------------------------------------*/
+
+@font-face {
+    font-family: lato-regular;
+    src: url(Lato/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: lato-bold;
+    src: url(Lato/Lato-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: lato-black;
+    src: url(Lato/Lato-Black.ttf) format("truetype");
+}
+
+
+/*----------------------------------------1.Universal CSS--------------------------*/
+
+html {
+    font-size: 16px;
+    color: #D1E9F9;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*----------------------------------------2.Common CSS---------------------------*/
+
+.bold {
+    font-family: lato-bold;
+}
+
+.color-white {
+    color: white;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.no-border,
+nav button,
+nav a,
+input {
+    box-shadow: none!important;
+}
+
+.custom-container {
+    max-width: 1123px;
+    margin: 0 auto;
+}
+
+.custom-bg-darkblue {
+    background: #53ADE9;
+}
+
+.color-blue {
+    color: #53ADE9;
+}
+
+.custom-bg-lightgray {
+    background: #F1F0F0;
+}
+
+.custom-btn-bg {
+    background-color: #4694C8;
+    color: white;
+}
+
+.custom-btn-bg:hover {
+    background: white;
+    color: #4694C8;
+}
+
+.mb-28 {
+    margin-bottom: 28px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.font-small {
+    font-size: small;
+}
+
+
+/*----------------------------------3.Navbar CSS---------------------------------------*/
+
+.py-19px {
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.searchbox {
+    border: 1px #4694C8 solid;
+    height: 36px;
+}
+
+.searchbox::placeholder {
+    color: white;
+}
+
+.search-btn {
+    font-size: 16px;
+}
+
+.mobile-nav {
+    color: white;
+}
+
+.mobile-nav:hover {
+    color: white;
+}
+
+
+/*---------------------------------------------4.Main CSS--------------------------------*/
+
+main {
+    padding-top: 60px;
+    padding-bottom: 32px;
+}
+
+.color-orange {
+    color: #E17950;
+}
+
+.article-heading {
+    padding: 0 15px;
+}
+
+.location-marker {
+    font-size: 1.5rem;
+}
+
+.img-wrapper {
+    width: 100%;
+}
+
+.talmer-logo {
+    width: 100%;
+}
+
+.grayfield-heading {
+    font-size: 2rem;
+    width: 96%;
+}
+
+.thumbnail-row {
+    margin-bottom: 36px;
+    padding-left: 11.75px;
+    padding-right: 11.25px;
+}
+
+.main-list:hover {
+    cursor: pointer;
+}
+
+.main-list a {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: lato-bold;
+}
+
+.font-19px {
+    font-size: 19px;
+}
+
+.pentagon {
+    top: 0;
+    right: 65px;
+}
+
+.rectangle {
+    background: #53ADE9;
+    position: relative;
+    font-size: 14px;
+    z-index: 1;
+    width: 107px;
+}
+
+.triangle {
+    position: absolute;
+    bottom: -25px;
+    right: 0px;
+    width: 107px;
+    z-index: 1;
+    border-top: 25px solid #53ADE9;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.aside ul li {
+    border-bottom: 1.5px rgb(226, 225, 225) solid;
+    font-size: 14px;
+}
+
+.list-heading {
+    padding: 7px 0;
+    margin-bottom: 0;
+}
+
+.list-description {
+    padding: 5px 0;
+}
+
+
+/*---------------------------------------------5.Footer CSS--------------------------------*/
+
+footer {
+    padding-top: 35px;
+    font-size: 13px;
+    padding-bottom: 35px;
+}
+
+
+/*media Queries*/
+
+@media (max-width:576px) {
+    .logo {
+        width: 50vw;
+    }
+    .font-size-1rem {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:767px) {
+    .custom-container {
+        width: 100%;
+    }
+    .custom-mobile-padding li {
+        width: 100%;
+    }
+    .mobile-nav:hover {
+        background: white;
+        color: #4694C8;
+        margin-right: -23px;
+        margin-left: -23px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+    .custom-btn-grp {
+        margin: 10px 26px;
+    }
+    .custom-button {
+        width: 100%;
+    }
+    .custom-button-parent {
+        width: 100%;
+    }
+    .width-collapse {
+        width: 100%;
+    }
+    .img-inner {
+        width: 25%;
+    }
+}
+
+@media (min-width:768px) {
+    .font-size {
+        font-size: 1.2rem;
+    }
+    .img-inner {
+        width: 50%;
+    }
+    .custom-container {
+        width: 100%;
+    }
+    .width-collapse {
+        width: 100%;
+    }
+    .home-info-para {
+        padding-left: 30px;
+    }
+    input[type="text"] {
+        width: 218px;
+    }
+    .custom-button {
+        width: 5.7rem;
+    }
+}
+
+@media (min-width:992px) {
+    .width-collapse {
+        width: 50%;
+    }
+    .custom-container {
+        width: 100%;
+    }
+    .aside {
+        padding-left: 42px;
+    }
+    .pr-28 {
+        padding-right: 28px!important;
+    }
+}
+
+@media (min-width:1200px) {
+    .width-collapse {
+        width: 50%;
+    }
+    input[type="text"] {
+        width: 218px;
+    }
+    .custom-container {
+        width: 100%;
+    }
+}

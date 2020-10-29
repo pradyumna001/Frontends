@@ -1,0 +1,460 @@
+/*---------------------- CSS INDEX ----------------------------------------------------------------------
+                        1.Universal CSS
+                        2.Common CSS
+                        3.Main-Container CSS
+                            3.1 Header
+                            3.2 Main
+                                3.2.1 Form
+                                3.2.2 Sidebar
+                            3.3 Footer
+                                3.3.1 Image Sprite
+---------------------- CSS INDEX --------------------------------------------------------------------*/
+
+
+/*------------------------- 1. Universal CSS --------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.advertisement_para>* {
+    margin-bottom: 30px;
+}
+
+
+/*------------------------- 2. Common CSS ---------------------------------------*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    min-width: 1306px;
+}
+
+.wrapper {
+    width: 1306px;
+    margin: 0 auto;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-black {
+    color: rgb(41, 38, 38);
+}
+
+.color-gray {
+    color: #65747d;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.asterisk {
+    color: #2085c6;
+    font-size: 20px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.font-12px {
+    font-size: 12px;
+}
+
+.darkblue-background {
+    background-color: #2085c6;
+}
+
+.label-column {
+    width: 226px;
+    text-align: right;
+    padding-left: 70px;
+    padding-top: 13px;
+}
+
+.row {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.input-column {
+    padding-left: 20px;
+    padding-right: 150px;
+    float: right;
+    width: 630px;
+}
+
+.detail-box {
+    background-color: #E8EFF5;
+}
+
+.detail-heading {
+    padding: 10px;
+}
+
+.dash {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.instruction {
+    color: #708391;
+    padding-right: 10px;
+}
+
+
+/*------------------------- 3.Main Container CSS Starts here ---------------------------------------*/
+
+
+/* ----------3.1. header ----------*/
+
+header {
+    min-width: 1306px;
+}
+
+.main-heading {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
+
+.logo {
+    padding-left: 4px;
+}
+
+
+/*----------3.2. Main ----------*/
+
+.min-width-1306px {
+    min-width: 1306px;
+    border-bottom: #e8f0f5 solid;
+}
+
+.page-title {
+    padding: 35px 0;
+    padding-right: 15px;
+}
+
+.font-15px {
+    font-size: 15px;
+}
+
+.border-left {
+    border-left: 8px #2085c6 solid;
+    padding-left: 15px;
+}
+
+.font-normal-13px {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.margin-top-bottom-minus3px {
+    margin-top: -3px;
+    margin-bottom: -3px;
+}
+
+.main-content-box {
+    padding-bottom: 40px;
+}
+
+.required-field {
+    padding-top: 10px;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+
+/*--3.2.1 Form elements --*/
+
+.form {
+    width: 868px;
+}
+
+.gender-column {
+    padding: 0;
+    margin: 0;
+}
+
+#Male-label,
+#Female-label {
+    padding: 0 10px 0 5px;
+}
+
+.question-mark {
+    width: 40px;
+    text-align: center;
+    line-height: 36px;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: help;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 460px;
+    float: left;
+    padding: 14px;
+    padding-top: 17px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select,
+#submit {
+    border: 1.1px solid #E1E9EB;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    margin-bottom: 5px;
+}
+
+.checkbox-label {
+    padding-left: 4px;
+    font-size: 16px;
+    width: 290px;
+    margin-bottom: 0;
+}
+
+.checkbox-label a {
+    text-decoration: none;
+    color: #2085c6;
+    text-align: center;
+}
+
+#question-mark-id:hover .tooltip {
+    visibility: visible;
+}
+
+.tooltip {
+    position: absolute;
+    visibility: hidden;
+    width: 120px;
+    top: 50px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+}
+
+.day-class,
+.month-class,
+.year-class {
+    width: 100px;
+    float: left;
+}
+
+#day,
+#month,
+#year {
+    width: 100px;
+    padding: 13px;
+    font-size: 14px;
+}
+
+#checkbox-agreement,
+#checkbox-newsletter {
+    height: 22px;
+    width: 22px;
+    margin-bottom: 3px;
+}
+
+.radio-label-column {
+    padding-right: 150px;
+    padding-top: 3px;
+}
+
+input[type="radio"] {
+    height: 20px;
+    width: 20px;
+}
+
+input::placeholder,
+textarea::placeholder,
+#day,
+#month,
+#year {
+    font-size: 16px;
+    color: #8f9ea7;
+}
+
+.agreement-checkbox {
+    color: #2085c6;
+}
+
+.margin-bottom-10px {
+    margin-bottom: 10px;
+}
+
+#submit {
+    padding: 10px 50px;
+    background: #2085c6;
+    border: none;
+    margin: 20px 20px 20px 0;
+    font-size: 20px;
+    white-space: normal;
+}
+
+#submit:hover {
+    background-color: #e8f0f5;
+    color: #2085c6;
+    cursor: pointer;
+}
+
+input:hover,
+textarea:hover,
+select:hover,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #5AACE4;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("drop-down-arrow.svg") no-repeat;
+    background-size: 8px;
+    background-position: right 10px top 19px;
+}
+
+textarea {
+    resize: none;
+    padding: 9px 14px;
+    height: 100px;
+    font-family: "Open Sans", sans-serif;
+    width: 460px;
+}
+
+
+/*3.2.2 Sidebar*/
+
+.advertise {
+    width: 385px;
+}
+
+.advertisement_title {
+    margin-bottom: 20px;
+    border-bottom: #2085c6 solid 2px;
+    padding: 18px 5px 10px 0px;
+}
+
+.exclamation {
+    background-color: #384b59;
+    width: 32px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    font-size: 16px;
+    /*     margin: 18px 0px 10px 0;
+ */
+}
+
+.title {
+    width: 346px;
+    padding: 7px;
+    /*  margin-top: 25px;
+    margin-bottom: 20px; */
+}
+
+
+/*----------3.3 Footer starts here----------*/
+
+footer {
+    background-color: #384b59;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-width: 1306px;
+}
+
+.footer-text {
+    line-height: 45px;
+    width: 50%;
+}
+
+
+/*--3.3.1 Image Sprite--*/
+
+.sprite {
+    width: 50%;
+}
+
+.tweeter {
+    width: 44px;
+    height: 43px;
+    vertical-align: middle;
+    background: url("sprite.png") 0px 0;
+    margin: 1px;
+    float: right;
+}
+
+.google {
+    float: right;
+    width: 44px;
+    height: 43px;
+    vertical-align: middle;
+    margin: 1px;
+    background: url("sprite.png") -44px 0px;
+}
+
+.facebook {
+    float: right;
+    width: 44px;
+    height: 43px;
+    vertical-align: middle;
+    margin: 1px;
+    background: url("sprite.png") -88px 0px;
+}
+
+.tweeter:hover {
+    background: url("sprite.png") 0 -44px;
+    width: 44px;
+    height: 43px;
+    vertical-align: middle;
+}
+
+.google:hover {
+    background: url("sprite.png") -44px -44px;
+    width: 44px;
+    height: 43px;
+    vertical-align: middle;
+}
+
+.facebook:hover {
+    background: url("sprite.png") -88px 43px;
+    width: 44px;
+    height: 43px;
+    vertical-align: middle;
+}
